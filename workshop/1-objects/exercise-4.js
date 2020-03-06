@@ -13,7 +13,14 @@ var foodPairings = {
 
 // 6.1. Write a script that will print out all foods in the object.
 
+Object.keys(foodPairings);
+
 
 // 6.2 Write a script that outputs each key/value pair to the console a sentence like this:
 // "With <FOOD_ITEM>, it is best to have <BEVERAGE>."
 
+Object.values(foodPairings);
+
+for (i = 0; i < 4; i++) {
+    console.log("with " + Object.keys(foodPairings)[i] + ", it is best to have " + Object.values(foodPairings)[i]);
+}
