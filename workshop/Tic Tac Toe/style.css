@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.board {
+    background: #eaeaea;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  repeat(3, 1fr);
+    height: 600px;
+    width: 600px;
+    grid-gap: 2px;
+    /* border: 2px solid #808080; */
+    margin: 32px 0;
+}
+.cell {
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 65px;
+    font-size: 60px;
+    color: rgb(33, 194, 223);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.cell:hover {
+    background-color: #808080;
+    transition: background-color linear 300ms;
+}
+
+.active {
+    border: 2px solid lightblue;
+}

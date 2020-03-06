@@ -16,6 +16,22 @@
 //     monthOfBirth: 'July'
 // }
 
+let myIdentity = {
+    name: {
+        first: "Matteo",
+        last: "Mortelliti"
+    },
+    age: "32",
+    city: "Montreal",
+    siblings: 2,
+    petName: "Matteezy",
+    monthOfBirth: "October"
+}
+
+console.log(myIdentity);
+console.log(myIdentity.name)
+console.log(myIdentity.age)
+
 // A) console.log() your object.
 // B) console.log() a few of the values in the object.
 
@@ -31,6 +47,12 @@
 //     - Pets (number of pets, names of pets, etc.)
 
 // HINT: You can just modify the object that you created before.
+
+
+myIdentity.favoriteTvShow = "The Office";
+myIdentity.pets = "none";
+myIdentity.occupation = "unemployed"
+
 
 //-------------------------------------------------
 
@@ -48,7 +70,11 @@
 // represent a collection of similar things?
 
 var favoriteMovie = {
-
+    title: "The Social Network",
+    Director: "David Fincher",
+    YearReleased: "2010",
+    imdbRating: "7.7",
+    Actors: ["Jesse Eisenberg", "Andrew Garfield", "Justin Timberlake"]
 }
 
 
@@ -65,7 +91,7 @@ const person = {
     hometown: "somewhere"
 };
 
-person[age];    // => 26
+person.age;    // => 26
 person.key;     // => "Alyssa P. Hacker"
 
 
@@ -89,8 +115,7 @@ const alyssa = {
 };
 
 function fullName(person) {
-    // Your code here
-
+    return (person.name.first + " " + person.name.middle + " " + person.name.last);
 }
 
 console.log(fullName(alyssa)); // => "Alyssa P. Hacker"
@@ -99,6 +124,7 @@ console.log(fullName(alyssa)); // => "Alyssa P. Hacker"
 // ------------
 // What happens if you pass a person object to `fullName` that doesn't have a
 // middle name?
+
 
 // Your `fullName` function should work correctly regardless of whether or not
 // the person has a middle name -- if it doesn't produce the output shown above
@@ -114,7 +140,7 @@ const rick = {
 };
 
 function betterFullName(person) {
-    // Your code here
+    return (person.name.first + " " + person.name.last);
 
 }
 

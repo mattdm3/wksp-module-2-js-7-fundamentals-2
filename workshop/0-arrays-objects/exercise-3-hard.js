@@ -10,3 +10,10 @@ const colors = ["red", "orange", "yellow", "green", "pink", "black", "gray", "bl
 
 // You must console the colors array.
 // NO for loops!
+
+
+colors.forEach(function (color) {
+    if (color === "red" || color === "orange" || color === "yellow" || color === "green" || color === "blue" || color === "violet") {
+        colors.splice(color);
+    }
+})
